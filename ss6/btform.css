@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+h2{
+	padding:20px;
+}
+#container{
+	margin: 0 auto;
+	width: 800px;
+}
+.login{
+	padding: 20px;
+	border:1px solid #bcb8b8;
+}
+#login{
+	float: left;
+	width: 277px;
+	height: 250px;
+	padding: 40px;
+	line-height: 25px;
+	margin: 0 auto;
+}
+#Register{
+	padding-left: 20px;
+	float: left;
+	width: 260px;
+	height: 250px;
+	padding: 40px;
+	line-height: 25px;
+}
+.Register{
+	padding: 20px;
+	border:1px solid #bcb8b8;
+
+}
+.firstname{
+	width: 100px;
+	float: left;
+}
+.lastname{
+	width: 100px;
+	float: left;
+}
+.First-name{
+	float: left;
+	padding-right: 5px;
+}
+.last-name{
+	float: left;
+
+}
