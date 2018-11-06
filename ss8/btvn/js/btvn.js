@@ -1,9 +1,9 @@
 var fullName = "Truong Thanh Dat";
 var firstName, secondName, lastName;
-firstName = fullName.slice(0,6);
+firstName = fullName.slice(0,fullName.indexOf(''));
 document.write(firstName);
 document.write('<br>');
-secondName = fullName.slice(7,11);
+secondName = fullName.slice(7,fullName.lastIndexOf(' '));
 document.write(secondName);
 document.write('<br>');
 var count = fullName.length;
