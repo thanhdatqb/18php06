@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width">
 	<title>Barber Shop</title>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="css/slicknav.css">
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 <body>
+	
 	<div id="container">
 		<div id="header">
-			<div class="p1">
-				<p>Chào mừng bạn đến với clip Barber Shop</p>
+			<div >
+				<p class="p1">Chào mừng bạn đến với clip Barber Shop</p>
 			</div>
 			<div class="images-logo">
 				<img class="images-logo" src="images/img-logo.png">
@@ -21,20 +27,21 @@
 		<div id="home">
 			<div class="header__menu">
                 <ul id="menu-trinh-don-chinh" class="nav nav-fill">
-                	<li id="item-8" class="item-8 nav-item"><a href="#" class="nav-link active">Trang chủ</a></li>
-					<li id="item-9" class="item-9 nav-item"><a href="#" class="nav-link">Giới thiệu</a></li>
-					<li id="item-10" class="item-10 nav-item"><a href="#" class="nav-link">Dịch vụ</a></li>
-					<li id="item-11" class="item-11 nav-item"><a href="#" class="nav-link">Sản phẩm</a></li>
-					<li id="item-12" class="item-12 nav-item"><a href="#" class="nav-link">Tóc đẹp</a></li>
-					<li id="item-22" class="item-22 nav-item"><a href="#" class="nav-link">Tin tức</a></li>
-					<li id="item-23" class="item-23 nav-item"><a href="#" class="nav-link">Tuyển dụng</a></li>
-					<li id="item-24" class="item-24 "><a href="#" class="nav-link">Khách hàng</a></li>
-					<li class="nav-item">
-			            <a class="nav-link2" href="#">
-			                <p class="datlich"><span>ĐẶT LỊCH</span></p>
-			            </a>
-        			</li>
-        		</ul>                    
+                	<li class="nav-1" ><a class="active" href="#">Trang chủ</a></li>
+		            <li class="nav-1"><a href="#">Giới thiệu</a></li>
+		            <li class="nav-1"><a href="#">Dịch vụ</a></li>
+		            <li class="nav-1"><a href="#">Sản phẩm</a></li>
+		            <li class="nav-1"><a href="#">Tóc đẹp</a></li>
+		            <li class="nav-1"><a href="#">Tin tức</a></li>
+		            <li class="nav-1"><a href="#">Tuyển dụng</a></li>
+		            <li class="nav-1"><a href="#">Khách hàng </a></li>
+		            <li class="nav-1"><a href="#">Đặt Lịch</a></li>
+        		</ul>         
+        		<script type="text/javascript">
+				$(document).ready(function(){
+					$('#menu').slicknav();
+				});
+				</script>           
         	</div>
 			<div id="banner">
 				<div id="slides">
@@ -88,60 +95,50 @@
 			<div id="product">
 				<div class="container">
 			        <h3 class="product-text">Sản phẩm từ Shop</h3>
-			        <div class="owl-carousel owl-theme owl-carousel__products">
-			            <div class="item">
-			                <div class="products-items">
-			                    <a href="" class="products-image">
-			                        <img width="" height="" class="" src="images/img-photo-1.png"/>
-			                    </a>
-			                    <div class="mt-2">
-			                        <a href="" class="products-text1 mb-2 d-block">Sáp Hanz De Fuko Quicksand</a>
-			                        <p class="hproducts-text-price mb-0">530k</p>
-			                    </div>
-			                </div>
-			            </div>
-			            <div class="item">
-			                <div class="products-items">
-			                    <a href="" class="products-image">
-			                        <img width="" height="" class="" src="images/img-photo-2.png"/>
-			                    </a>
-			                    <div class="mt-2">
-			                        <a href="" class="products-text1 mb-2 d-block">Sáp Hanz De Fuko Quicksand</a>
-			                        <p class="products-text-price mb-0">530k</p>
-			                    </div>
-			                </div>
-			            </div>
-			            <div class="item">
-			                <div class="products-items">
-			                    <a href="" class="products-image">
-			                        <img width="" height="" class="" src="images/img-photo-3.png"/>
-			                    </a>
-			                    <div class="mt-2">
-			                        <a href="" class="products-text1 mb-2 d-block">Sáp Hanz De Fuko Quicksand</a>
-			                        <p class="products-text-price mb-0">530k</p>
-			                    </div>
-			                </div>
-			            </div>
-			            <div class="item ">
-			                <div class="products-items " style="display: none;">
-			                    <a href="" class="products-image">
-			                        <img width="" height="" class="" src="images/img-photo-1.png" />
-			                    </a>
-			                    <div class="mt-2">
-			                        <a href="" class="products-text1 mb-2 d-block">Sáp Hanz De Fuko Quicksand</a>
-			                        <p class="products-text-price mb-0">530k</p>
-			                    </div>
-			                </div>
-			            </div>
-			            <div id="buttonslideContainer">
-					<div id="buttonleft"><img style="transform: rotate(180deg)" src="images/ic-sr2 (1).png"></div>
-					<div id="buttonrigth"><img class="img-button" src="images/ic-sr2 (1).png"></div>
-				</div>
-			        </div>
-			        <div class="text-center mt-4">
+			        <ul class="bxslider">
+					 	<li><img src="images/img-photo-1.png" />
+					 	<div class="mt-2">
+						    <a href="" class="products-text1 mb-2 d-block">Sáp Hanz De Fuko Quicksand</a>
+						    <p class="products-text-price mb-0">530k</p>
+						</div>
+						</li>
+						<li><img src="images/img-photo-2.png" />
+					 	<div class="mt-2">
+						    <a href="" class="products-text1 mb-2 d-block">Sáp Hanz De Fuko Quicksand</a>
+						    <p class="products-text-price mb-0">530k</p>
+						</div>
+						</li>
+						<li><img src="images/img-photo-3.png" />
+						 	<div class="mt-2">
+							    <a href="" class="products-text1 mb-2 d-block">Sáp Hanz De Fuko Quicksand</a>
+							    <p class="products-text-price mb-0">530k</p>
+							</div>
+						</li>
+						<li><img src="images/img-photo-1.png" />
+						 	<div class="mt-2">
+							    <a href="" class="products-text1 mb-2 d-block">Sáp Hanz De Fuko Quicksand</a>
+							    <p class="products-text-price mb-0">530k</p>
+							</div>
+						</li>
+					</ul>
+					<script>
+						$(document).ready(function(){
+							$('.bxslider').bxSlider({
+								mode: 'horizontal',
+								moveSlides: 1,
+								slideMargin: 40,
+								infiniteLoop: true,
+								slideWidth: 300,
+								minSlides: 2,
+								maxSlides: 3,
+								speed: 800,
+							});
+						});
+					</script>
+			    </div>
+			        <div class="tấtext-center mt-4">
 			            <a href="" class="m-btn m-btn-orange">Xem tất cả</a>
 			        </div>	
-			    </div>
 			</div>
 			<div id="service">
 				<div class="container">
@@ -220,16 +217,15 @@
 					<p>Ngày cấp : 08/06/2016</p>
 					<p>Nơi cấp : Sở kế hoạch đầu tư TP Đà Nẵng</p>
 					<p>Chính sách bảo mật thông tin</p>
-				</div>
-				<div  class="logo3 footer">		
-					<p>Copyright 2018 Clip Barbershop, Inc.</p>
-					<p>All Rights Reserved</p>
-				</div>
-				
+				</div>	
+					<iframe style="padding:50px 0 0 10px;" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgirlsexy9xxx%2F&tabs=timeline&width=340&height=120&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="340" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>							
 			</div>
 		</div>
 		
 	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/slicknav.js"></script>
 	<script type="text/javascript" src="js/slideshow.js"></script>
+<script src="js/jquery.bxslider.js"></script>	
 </body>
 </html>

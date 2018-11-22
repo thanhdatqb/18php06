@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Camera a free jQuery slideshow with many effects, transitions, adaptive layout, easy to customize, using canvas and mobile ready"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Giới Thiệu - Barber Shop</title>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">	
+	<link rel="stylesheet" href="css/slicknav.css">
+	<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+	
+
+</head>
+<body>
+	
+	<div id="container">
+		<div id="header">
+			<div >
+				<p class="p1">Chào mừng bạn đến với clip Barber Shop</p>
+			</div>
+			<div class="images-logo">
+				<img class="images-logo" src="images/img-logo.png">
+			</div>
+			<div>
+				
+			</div>
+		</div>
+		<div id="home">
+			<div class="header__menu">
+                <ul id="menu-trinh-don-chinh" class="nav nav-fill">
+                	<li class="nav-1" ><a class="active" href="#">Trang chủ</a></li>
+		            <li class="nav-1"><a href="#">Giới thiệu</a></li>
+		            <li class="nav-1"><a href="#">Dịch vụ</a></li>
+		            <li class="nav-1"><a href="#">Sản phẩm</a></li>
+		            <li class="nav-1"><a href="#">Tóc đẹp</a></li>
+		            <li class="nav-1"><a href="#">Tin tức</a></li>
+		            <li class="nav-1"><a href="#">Tuyển dụng</a></li>
+		            <li class="nav-1"><a href="#">Khách hàng </a></li>
+		            <li class="nav-1"><a href="#">Đặt Lịch</a></li>
+        		</ul>         
+        		<script type="text/javascript">
+				$(document).ready(function(){
+					$('#menu').slicknav();
+				});
+				</script>           
+        	</div>
+        	<div id="banner-2">
+				<div class="banner-2">
+					<h3 class="gt-1"> GIỚI THIỆU</h3>
+					<p class="gt"><a  class="gt" href="#">Trang chủ</a> / <a  class="gt" href="#">Giới Thiệu </a></p>
+				</div>
+			</div>
+			<div id="content">
+				<div class="content-container1">
+					<div class="img-gt">
+						<img src="images/img-photo-7.png">
+					</div>
+					<div class="content-gt">
+						<p class="gt-2">GIỚI THIỆU VỀ CLIP BARBERSHOP</p>
+						<p class="gt-3">
+							<span style="font-weight: bold;">“Clip Barbershop”</span> tin tưởng & nỗ lực mỗi ngày để kết nối bàn tay tài hoa của người thợ Việt cùng quy trình khoa học 30 phút nhằm đem đến cho phái mạnh toàn cầu kiểu tóc đẹp trai, làn da khoẻ mạnh cuốn hút phái đẹp; tinh thần thư giãn để bứt phá trong sự nghiệp.
+						</p>
+						<p class="gt-3">
+							<span style="font-weight: bold;">“Clip Barbershop”</span> chạy thử nghiệm lần đầu tiên tại Đà Nẵng vào tháng 5/2015 và mất 1 năm để tìm ra hướng đi như hiện nay. Những anh em sáng lập Clip Barbershop tin tưởng rằng người thợ Việt Nam rất tận tâm, khéo léo trong các nhóm ngành nghề cắt tóc, làm móng, massage… Nếu đưa ra một mô hình mới ứng dụng công nghệ và quy trình hợp lý, Clip Barbershop có thể giúp thế mạnh này được chắp cánh, mang lại dịch vụ tuyệt vời cho khách hàng, tạo dựng môi trường tốt hơn cho anh em thợ. Theo đó, doanh nghiệp cũng có khả năng phát triển bền vững tại Việt Nam và vươn ra nước ngoài
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="fluid_container">
+        		<div class="fluid_container">
+        			<h3 class="h3-ha"> HÌNH ẢNH VỀ SHOP</h3>
+        			<div class="camera_wrap camera_emboss" id="camera_wrap_3">
+			            <div data-thumb ="images/thumbs/img-photo-1.png" data-src="images/img-photo-1.png">
+			            </div>
+			            <div data-thumb="images/thumbs/img-photo-2.png" data-src="images/img-photo-2.png">
+			            </div>
+			            <div data-thumb="images/thumbs/img-photo-3.png" data-src="images/img-photo-3.png">
+			            </div>
+			            <div data-thumb="images/thumbs/img-photo-4.png" data-src="images/img-photo-4.png">
+			            </div>
+			            <div data-thumb="images/thumbs/img-photo-5.png" data-src="images/img-photo-5.png">
+			            </div>
+		      	  	</div><!-- #camera_wrap_3 -->
+
+		    	</div><!-- .fluid_container -->  
+		    <div style="clear:both; display:block; height:100px"></div>
+		    <script>
+		        jQuery(function(){
+		            
+		            jQuery('#camera_wrap_3').camera({
+		                height: '60%',
+		                pagination: false,
+		                thumbnails: true,
+		                imagePath: '../images/'
+		            });
+
+		        });
+		    </script>
+        	</div>
+			<div id="clip">
+				<h3 class="product-text">CLIP BARBERSHOP TV</h3>
+				<img src="images/clip.png" width="100%">
+			</div>
+		<div id="footer">
+			<div id="container-footer"> 
+				<div  class="logo1 footer">
+					<img src="images/img-logo.png" width="90px" height="50px">
+					<p>Copyright 2018 Clip Barbershop, Inc.</p>
+					<p>All Rights Reserved</p>
+					<p>Phát triển bởi  <img src="images/img-logo-minaworks.png" width="100px"></p>
+				</div>
+				<div  class="logo2 footer">
+					<p>CÔNG TY CỔ PHẦN TMDV CLIP BARBERSHOP</p><br>
+					<p>Địa chỉ 1: 115 Trần Cao vân, Tam Thuận, Thanh Khê, Đà Nẵng</p>
+					<p>Địa chỉ 2: 242 Trần Cao vân, Thanh Khê, Đà Nẵng</p><br>
+					<p>Số giấy chứng nhận kinh doanh: 010.7467.693</p>
+					<p>Ngày cấp : 08/06/2016</p>
+					<p>Nơi cấp : Sở kế hoạch đầu tư TP Đà Nẵng</p>
+					<p>Chính sách bảo mật thông tin</p>
+				</div>	
+					<iframe style="padding:50px 0 0 10px;" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgirlsexy9xxx%2F&tabs=timeline&width=340&height=120&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="340" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>							
+			</div>
+		</div>
+		
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/slicknav.js"></script>
+	<script type="text/javascript" src="js/slideshow.js"></script>
+	<script src="js/jquery.bxslider.js"></script>	
+	<script type='text/javascript' src='js/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='js/camera.js'></script> 
+</body>
+</html>
